@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+body {
+    font-family: Roboto, sans-serif;
+
+    display: grid;
+    grid: "principal sugestoes" 1fr / minmax(543px,2fr) minmax(270px,1fr);
+    grid-gap: 17px;
+    padding: 38px 35px;
+}
+
+.playing {
+    grid-area: principal;
+
+    display: flex;
+    flex-flow: column wrap;
+    gap: 12px;
+}
+
+.playing .main-video {
+    height: 55vh;
+    background: #C4C4C4;
+}
+
+.playing .main-info {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+}
+
+.main-info > h1 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.main-info > span {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.main-info > p {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.sugestions {
+    grid-area: sugestoes;
+
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+
+.sugestions .ad {
+    height: 70px;
+    background: #C4C4C4;
+}
+
+.thumbs {
+    display: grid;
+    grid-template: repeat(4, 1fr) / auto 60%;
+    grid-gap: 20px 4px;
+}
+
+.thumbs .thumb {
+    background: #C4C4C4;
+}
+
+.thumbs > h2 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.thumbs > p {
+    font-size: 11px;
+    font-weight: 300;
+}
